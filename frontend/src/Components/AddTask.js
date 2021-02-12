@@ -10,7 +10,7 @@ const StyledForm = styled.section`
 
 const StyledLabel = styled.label`
     font-family: monospace; 
-    margin-left: 30px; 
+    margin-left: 2em; 
 `
 ;
 

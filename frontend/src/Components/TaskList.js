@@ -2,7 +2,7 @@ import Task from "./Task";
 import styled from 'styled-components';
 
 const StyledSection = styled.section`
-    background-color: ${props => props.done ? "silver" : "white"};
+    background-color: ${props => props.done ? "lightgrey" : "snow"};
     flex-grow: 1;
     border-style: solid; 
     border-width: 1px; 
@@ -20,6 +20,7 @@ const StyledDiv = styled.div`
 
 const StyledH2 = styled.h2`
     font-family: serif; 
+    color: dimgrey; 
 `
 ;
 

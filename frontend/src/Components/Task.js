@@ -22,11 +22,19 @@ function Task({id, description, status, updateTask}) {
                     updateTask(response.data)
                 })
         }}/>}
+
+        {status !== "OPEN" && <Button text={"Retreat"} onClick={() => {
+            const newStatus = status === "IN_PROGRESS" ? "OPEN" : "IN_PROGRESS"
+            advanceTask(id, description, newStatus)
+                .then(response => {
+                    updateTask(response.data)
+                })
+        }}/>}
+
         <Button onClick={() => {
             deleteTask(id)
-            updateTask({id: id, description: description, status: status}, true)}
-        }
-                text={"Delete"}/>
+            updateTask({id: id, description: description, status: status}, true)
+        }} text={"Delete"}/>
     </StyledTask>)
 }
 

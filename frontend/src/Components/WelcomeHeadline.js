@@ -4,6 +4,7 @@ const StyledHeader = styled.header`
     font-family: monospace; 
     text-align: left; 
     font-size: 2em;
+    margin-left: 0.5em
 `;
 
 function WelcomeHeadline(){

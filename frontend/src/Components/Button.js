@@ -5,14 +5,14 @@ const StyledButton = styled.button`
   background: white;
   font-size: 12px;
   border-radius: 3px;
-  color: palevioletred;
-  border: 2px solid palevioletred;
-  margin: 0 1em;
+  color: teal;
+  border: 2px solid teal;
+  margin: 0 0.5em;
   padding: 0.25em 1em;
   transition: 0.5s all ease-out;
  
   &:hover {
-    background-color: palevioletred;
+    background-color: teal;
     color: white;
   }
 `;
